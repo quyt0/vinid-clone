@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siêu ứng dụng thông minh cho người Việt | VinID</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header__logo-with-search-wrap">
+                <a href="/">
+                    <img class="header__logo-main" src="./assets/img/logo/vinid_logo.png" alt="VinID Logo">
+                </a>
+                <div class="header__search-input-wrap">
+                    <i class="fa-solid fa-magnifying-glass header__search-icon"></i>
+                    <input class="header__search-input" type="text" placeholder="Cùng khám phá VinID">
+                    <div class="header__search-history">
+                        <div class="header__search-history-main">
+                            <h2 class="header__search-history-heading" tabindex="1">Bạn đã tìm</h2>
+                            <ul class="header__search-history-list">
+                                <li class="header__search-history-item" tabindex="1">Xin chào VinID</li>
+                                <li class="header__search-history-item" tabindex="1">VinID clone by Cuýt</li>
+                                <li class="header__search-history-item" tabindex="1">VinID có bán Cuýt không?</li>
+                            </ul>
+                        </div>
+                        <div class="header__search-history-popular">
+                            <h2 class="header__search-history-heading" tabindex="1">Tìm kiếm nổi bật</h2>
+                            <div class="header__search-history-popular-item-wrap">
+                                <a href="" class="btn header__search-history-popular-item">Voucher</a>
+                                <a href="" class="btn header__search-history-popular-item">Giftcard</a>
+                                <a href="" class="btn header__search-history-popular-item">Về VinID</a>
+                                <a href="" class="btn header__search-history-popular-item">Thanh toán</a>
+                                <a href="" class="btn header__search-history-popular-item">Tích điểm</a>
+                                <a href="" class="btn header__search-history-popular-item">Đổi quà</a>
+                                <a href="" class="btn header__search-history-popular-item">Ưa thích</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <nav class="header__navbar-with-btn-download-app">
+                <ul class="header__navbar-main">
+                    <li class="header__navbar-item header__navbar-item--active">
+                        <a href="/" class="header__navbar-link">Trang chủ</a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item-intro">
+                        <a href="#" class="header__navbar-link">
+                            Giới thiệu
+                            <i class="fa-solid fa-caret-down header__navbar-down-icon"></i>
+                        </a>
+                        <ul class="header__navbar-item-form-list header__navbar-item-form-intro-list">
+                            <li class="header__navbar-form-item">
+                                <a href="#" class="header__navbar-form-link">Về VinID</a>
+                            </li>
+                            <li class="header__navbar-form-item">
+                                <a href="#" class="header__navbar-form-link">Việc làm</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item-service">
+                        <a href="#" class="header__navbar-link">
+                            Dịch vụ
+                            <i class="fa-solid fa-caret-down header__navbar-down-icon"></i>
+                        </a>
+                        <ul class="header__navbar-item-form-list header__navbar-item-form-service-list">
+                            <li class="header__navbar-form-item">
+                                <a href="#" class="header__navbar-form-link">Voucher</a>
+                            </li>
+                            <li class="header__navbar-form-item">
+                                <a href="#" class="header__navbar-form-link">VinID Giá Sốc</a>
+                            </li>
+                            <li class="header__navbar-form-item">
+                                <a href="#" class="header__navbar-form-link">Tiêu tích điểm</a>
+                            </li>
+                            <li class="header__navbar-form-item">
+                                <a href="#" class="header__navbar-form-link">Gift Card</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-link">Tin tức</a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-link">Blog</a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item-help">
+                        <a href="#" class="header__navbar-link">
+                            Hỗ trợ
+                            <i class="fa-solid fa-caret-down header__navbar-down-icon"></i>
+                        </a>
+                        <ul class="header__navbar-item-form-list header__navbar-item-form-help-list">
+                            <li class="header__navbar-form-item">
+                                <a href="#" class="header__navbar-form-link">Câu hỏi thường gặp</a>
+                            </li>
+                            <li class="header__navbar-form-item">
+                                <a href="#" class="header__navbar-form-link">Hướng dẫn</a>
+                            </li>
+                            <li class="header__navbar-form-item">
+                                <a href="#" class="header__navbar-form-link">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__navbar-item-btn-download">
+                        <a href="#" class="btn btn--primary header__navbar-link-btn-download">Tải ứng dụng</a>
+                        <div class="header__navbar-download-form">
+                            <span class="header__navbar-download-form-desc">
+                                Dùng ứng dụng QR để quét mã, hoặc tải ứng dụng từ Google Play hoặc Apple Store
+                            </span>
+                            <div class="header__navbar-download-form-body">
+                                <div class="header__navbar-download-form-body-btn">
+                                    <a href="https://apps.apple.com/vn/app/vinid/id1215495998" class="btn btn--primary header__navbar-download-btn header__navbar-download-btn--appstore">
+                                        <i class="fa-brands fa-app-store-ios header__navbar-app-icon"></i>
+                                        AppStore
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.vingroup.vinid" class="btn btn--primary header__navbar-download-btn header__navbar-download-btn--googleplay">
+                                        <i class="fa-brands fa-google-play header__navbar-app-icon"></i>
+                                        Google Play
+                                    </a>
+                                </div>
+                                <div class="header__navbar-download-form-body-qr">
+                                    <img class="header__navbar-download-form-body-qr-img" src="./assets/img/logo/qrcode.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="slider">
+            <img src="./assets/img/slider/slider2.jpg" class="slider__img-main" alt="">
+            <span class="slider__nav-icon-wrapper slider__nav-icon-wrapper-left">
+                <i class="fa-solid fa-arrow-left slider__nav-icon-left"></i>
+            </span>
+            <span class="slider__nav-icon-wrapper slider__nav-icon-wrapper-right">
+                <i class="fa-solid fa-arrow-right slider__nav-icon-right"></i>
+            </span>
+            <ul class="slider__slick-list">
+                <li class="slider__slick-item slider__slick-item--active"></li>
+                <li class="slider__slick-item"></li>
+                <li class="slider__slick-item"></li>
+            </ul>
+        </div>
+
+        <div class="grid wide intro">
+            <div class="row intro-row">
+                <div class="col l-2-4 m-4 c-12 intro-item">
+                    <div class="itro-item__logo-wrapper">
+                        <img src="./assets/img/logo/badge.png" alt="">
+                    </div>
+                    <div class="intro-item__desc-wrapper">
+                        <p class="intro-item-desc">11.000.000+</p>
+                        <p class="intro-item-desc">khách hàng tin dùng</p>
+                    </div>
+                </div>
+                <div class="col l-2-4 m-4 c-12 intro-item">
+                    <div class="itro-item__logo-wrapper">
+                        <img src="./assets/img/logo/store.png" alt="">
+                    </div>
+                    <div class="intro-item__desc-wrapper">
+                        <p class="intro-item-desc">100.000+</p>
+                        <p class="intro-item-desc">điểm thanh toán</p>
+                    </div>
+                </div>
+                <div class="col l-2-4 m-4 c-12 intro-item">
+                    <div class="itro-item__logo-wrapper">
+                        <img src="./assets/img/logo/point.png" alt="">
+                    </div>
+                    <div class="intro-item__desc-wrapper">
+                        <p class="intro-item-desc">Tích và tiêu điểm</p>
+                        <p class="intro-item-desc">dễ dàng</p>
+                    </div>
+                </div>
+                <div class="col l-2-4 m-4 c-12 intro-item">
+                    <div class="itro-item__logo-wrapper">
+                        <img src="./assets/img/logo/pay.png" alt="">
+                    </div>
+                    <div class="intro-item__desc-wrapper">
+                        <p class="intro-item-desc">Chuyển tiền</p>
+                        <p class="intro-item-desc">miễn phí</p>
+                    </div>
+                </div>
+                <div class="col l-2-4 m-4 c-12 intro-item">
+                    <div class="itro-item__logo-wrapper">
+                        <img src="./assets/img/logo/voucher.png" alt="">
+                    </div>
+                    <div class="intro-item__desc-wrapper">
+                        <p class="intro-item-desc">Hàng ngàn</p>
+                        <p class="intro-item-desc">voucher miễn phí</p>
+                    </div>
+                </div>
+                <div class="row intro-detail">
+                    <div class="col l-2-4 m-4 c-12 intro-item-detail">
+                        <p class="intro-item-detail-desc">Cung cấp nhiều tiện ích cho cuộc sống hằng ngày của người Việt.</p>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12 intro-item-detail">
+                        <p class="intro-item-detail-desc">Thanh toán không tiền mặt nhanh chóng, bảo mật tại nhiều điểm thanh toán trong cả nước.</p>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12 intro-item-detail">
+                        <p class="intro-item-detail-desc">Tích và tiêu điểm VinID khi đi siêu thị, bệnh viện, du lịch, mua sắm tại các đối tác của VinID.</p>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12 intro-item-detail">
+                        <p class="intro-item-detail-desc">Chuyển và nhận tiền miễn phí mọi lúc mọi nơi.</p>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12 intro-item-detail">
+                        <p class="intro-item-detail-desc">Đáp ứng mọi nhu cầu ăn uống, mua sắm, giải trí của khách hàng.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid wide">
+            <div class="row main-app">
+                <div class="col l-6 main-app__desc">
+                    <h1 class="main-app__desc-heading heading-separated">Siêu ứng dụng thông minh, cho người Việt</h1>
+                    <div class="separator"></div>
+                    <p class="main-app__desc-content">VinID là siêu ứng dụng thông minh, giải quyết mọi nhu cầu hàng ngày của người Việt, giúp cuộc sống của họ trở nên tiện lợi và tiết kiệm hơn.</p>
+                    <a href="" class="btn btn--primary btn--right-icon main-app__btn-discover">
+                        Tìm hiểu thêm
+                        <i class="fa-solid fa-arrow-right right-icon"></i>
+                    </a>
+                </div>
+                <div class="col l-5 l-o-1 main-app__img">
+                    <img src="./assets/img/main/9b014218-artboard-1-2-1.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="heading-separated">
+                <h1 class="service__heading">Vô vàn tiện ích & dịch vụ</h1>
+                <div class="separator separator--center"></div>
+            </div>
+            <div class="service__list-wrapper">
+                <ul class="service__list">
+                    <li class="service__item">
+                        <img src="./assets/img/service/service1.png" alt="" class="service__item-banner">
+                        <div class="service__item-content">
+                            <img src="./assets/img/logo/cart.png" alt="" class="service__item-icon">
+                            <div class="service__item-content-body">
+                                <h4 class="service__item-content-heading">Mua sắm trực tuyến</h4>
+                                <p class="service__item-content-desc">Đi chợ, mua sắm, đặt đồ ăn uống online và nhận hàng tiện lợi ngay tại nhà.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <img src="./assets/img/service/service2.png" alt="" class="service__item-banner">
+                        <div class="service__item-content">
+                            <img src="./assets/img/logo/voucher2.png" alt="" class="service__item-icon">
+                            <div class="service__item-content-body">
+                                <h4 class="service__item-content-heading">Voucer - Đổi thưởng</h4>
+                                <p class="service__item-content-desc">Hàng ngàn voucher ăn uống, mua sắm, giải trí,… miễn phí hoặc đổi bằng điểm VinID.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <img src="./assets/img/service/service3.png" alt="" class="service__item-banner">
+                        <div class="service__item-content">
+                            <img src="./assets/img/logo/bill.png" alt="" class="service__item-icon">
+                            <div class="service__item-content-body">
+                                <h4 class="service__item-content-heading">Thanh toán hoá đơn</h4>
+                                <p class="service__item-content-desc">Không sợ trễ hạn, thanh toán hoá đơn điện nước, internet ngay tại nhà với tính năng thanh toán tự động.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <img src="./assets/img/service/service4.png" alt="" class="service__item-banner">
+                        <div class="service__item-content">
+                            <img src="./assets/img/logo/mobile_money.png" alt="" class="service__item-icon">
+                            <div class="service__item-content-body">
+                                <h4 class="service__item-content-heading">Thanh toán điện thoại</h4>
+                                <p class="service__item-content-desc">Cài đặt tính năng nạp tiền điện thoại tự động để không bỏ lỡ khuyến mãi nhà mạng.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <img src="./assets/img/service/service5.png" alt="" class="service__item-banner">
+                        <div class="service__item-content">
+                            <img src="./assets/img/logo/media.png" alt="" class="service__item-icon">
+                            <div class="service__item-content-body">
+                                <h4 class="service__item-content-heading">Giải trí</h4>
+                                <p class="service__item-content-desc">Không sợ trễ hạn, thanh toán hoá đơn điện nước, internet ngay tại nhà với tính năng thanh toán tự động.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <img src="./assets/img/service/service6.png" alt="" class="service__item-banner">
+                        <div class="service__item-content">
+                            <img src="./assets/img/logo/vinpoint.png" alt="" class="service__item-icon">
+                            <div class="service__item-content-body">
+                                <h4 class="service__item-content-heading">Tích và tiêu điểm</h4>
+                                <p class="service__item-content-desc">Dễ dàng tích và tiêu điểm tại hệ thống VinMart, VinMart+ và nhiều đối tác của VinID</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <img src="./assets/img/service/service7.png" alt="" class="service__item-banner">
+                        <div class="service__item-content">
+                            <img src="./assets/img/logo/wallet.png" alt="" class="service__item-icon">
+                            <div class="service__item-content-body">
+                                <h4 class="service__item-content-heading">Ví điện tử</h4>
+                                <p class="service__item-content-desc">Miễn phí chuyển/ nhận tiền mọi lúc mọi nơi, an toàn bảo mật đạt chuẩn quốc tế.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <img src="./assets/img/service/service1.png" alt="" class="service__item-banner">
+                        <div class="service__item-content">
+                            <img src="./assets/img/logo/cart.png" alt="" class="service__item-icon">
+                            <div class="service__item-content-body">
+                                <h4 class="service__item-content-heading">Mua sắm trực tuyến</h4>
+                                <p class="service__item-content-desc">Đi chợ, mua sắm, đặt đồ ăn uống online và nhận hàng tiện lợi ngay tại nhà.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <img src="./assets/img/service/service2.png" alt="" class="service__item-banner">
+                        <div class="service__item-content">
+                            <img src="./assets/img/logo/voucher2.png" alt="" class="service__item-icon">
+                            <div class="service__item-content-body">
+                                <h4 class="service__item-content-heading">Voucer - Đổi thưởng</h4>
+                                <p class="service__item-content-desc">Hàng ngàn voucher ăn uống, mua sắm, giải trí,… miễn phí hoặc đổi bằng điểm VinID.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <img src="./assets/img/service/service3.png" alt="" class="service__item-banner">
+                        <div class="service__item-content">
+                            <img src="./assets/img/logo/bill.png" alt="" class="service__item-icon">
+                            <div class="service__item-content-body">
+                                <h4 class="service__item-content-heading">Thanh toán hoá đơn</h4>
+                                <p class="service__item-content-desc">Không sợ trễ hạn, thanh toán hoá đơn điện nước, internet ngay tại nhà với tính năng thanh toán tự động.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <img src="./assets/img/service/service4.png" alt="" class="service__item-banner">
+                        <div class="service__item-content">
+                            <img src="./assets/img/logo/mobile_money.png" alt="" class="service__item-icon">
+                            <div class="service__item-content-body">
+                                <h4 class="service__item-content-heading">Thanh toán điện thoại</h4>
+                                <p class="service__item-content-desc">Cài đặt tính năng nạp tiền điện thoại tự động để không bỏ lỡ khuyến mãi nhà mạng.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <img src="./assets/img/service/service5.png" alt="" class="service__item-banner">
+                        <div class="service__item-content">
+                            <img src="./assets/img/logo/media.png" alt="" class="service__item-icon">
+                            <div class="service__item-content-body">
+                                <h4 class="service__item-content-heading">Giải trí</h4>
+                                <p class="service__item-content-desc">Không sợ trễ hạn, thanh toán hoá đơn điện nước, internet ngay tại nhà với tính năng thanh toán tự động.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <img src="./assets/img/service/service6.png" alt="" class="service__item-banner">
+                        <div class="service__item-content">
+                            <img src="./assets/img/logo/vinpoint.png" alt="" class="service__item-icon">
+                            <div class="service__item-content-body">
+                                <h4 class="service__item-content-heading">Tích và tiêu điểm</h4>
+                                <p class="service__item-content-desc">Dễ dàng tích và tiêu điểm tại hệ thống VinMart, VinMart+ và nhiều đối tác của VinID</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service__item">
+                        <img src="./assets/img/service/service7.png" alt="" class="service__item-banner">
+                        <div class="service__item-content">
+                            <img src="./assets/img/logo/wallet.png" alt="" class="service__item-icon">
+                            <div class="service__item-content-body">
+                                <h4 class="service__item-content-heading">Ví điện tử</h4>
+                                <p class="service__item-content-desc">Miễn phí chuyển/ nhận tiền mọi lúc mọi nơi, an toàn bảo mật đạt chuẩn quốc tế.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="voucher">
+            <div class="heading-separated">
+                <h1 class="voucher__heading">Tiết kiệm hơn với VinID Voucher</h1>
+                <div class="separator separator--center"></div>
+            </div>
+            <p class="voucher__heading-sub-head">Hãy chọn Voucher theo sở thích của bạn</p>
+            <div class="voucher__btn-favourite-wrapper">
+                <a href="" class="btn btn--active voucher__btn-favourite">Ẩm thực</a>
+                <a href="" class="btn voucher__btn-favourite">Dịch vụ</a>
+                <a href="" class="btn voucher__btn-favourite">Hot</a>
+                <a href="" class="btn voucher__btn-favourite">Thời trang</a>
+                <a href="" class="btn voucher__btn-favourite">Khác</a>
+                <a href="" class="btn voucher__btn-favourite">Làm đẹp</a>
+            </div>
+            <div class="grid wide">
+                <div class="row voucher-row">
+                    <div class="col l-4 voucher__item">
+                        <a href="" class="img-link">
+                            <img src="./assets/img/voucher/banhnau.jpg" alt="" class="voucher__item-img">
+                        </a>
+                        <div class="voucher__item-discount">Giảm 30.000đ</div>
+                        <a href="" class="voucher__item-title">[Hà Nội] Tiệm Bánh Nâu giảm 30K mua bánh Online 4 mùa không ngán</a>
+                        <p class="voucher__item-desc">Chi tiết chương trình Voucher giảm 30,000đ áp dụng cho mọi hóa đơn mua hàng từ Tiệm Bánh Nâu. Thời gian áp dụng: Từ 24/05/2022 đến hết…</p>
+                    </div>
+                    <div class="col l-4 voucher__item">
+                        <a href="" class="img-link">
+                            <img src="./assets/img/voucher/sushi.jpg" alt="" class="voucher__item-img">
+                        </a>
+                        <div class="voucher__item-discount">Giảm 50.000đ</div>
+                        <a href="" class="voucher__item-title">[Xuân Hoà] Giảm 50K thưởng thức Sushi Garden ngon quên lối về</a>
+                        <p class="voucher__item-desc">Chi tiết chương trình Voucher giảm 50,000đ áp dụng cho hóa đơn từ 500,000đ để thưởng thức tinh hoa ẩm thực Nhật Bản tại nhà hàng Sushi…</p>
+                    </div>
+                    <div class="col l-4 voucher__item">
+                        <a href="" class="img-link">
+                            <img src="./assets/img/voucher/coffee.jpg" alt="" class="voucher__item-img">
+                        </a>
+                        <div class="voucher__item-discount">Mua 1 tặng 1</div>
+                        <a href="" class="voucher__item-title"> [Toàn quốc] The Coffee House ưu đãi mua 1 tặng 1</a>
+                        <p class="voucher__item-desc">Chi tiết chương trình Voucher mua 1 tặng 1 áp dụng cho Trà sữa và Macchiato của The Coffee House, áp dụng lũy tiến (mua 2 tặng…</p>
+                    </div>
+                    <a href="" class="btn btn--primary btn--right-icon voucher__btn-discover">
+                        Khám phá thêm
+                        <i class="fa-solid fa-arrow-right right-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="register">
+            <div class="heading-separated">
+                <h1 class="voucher__heading">Đăng ký đơn giản chỉ với 3 bước</h1>
+                <div class="separator separator--center"></div>
+            </div>
+            <div class="grid wide">
+                <div class="row register-row">
+                    <div class="col l-3 register__item">
+                        <img src="./assets/img/register/step1.png" class="register__img" alt="">
+                        <div class="register__item-body">
+                            <span class="register__step-num">1</span>
+                            <div class="register__step-content">
+                                <h3 class="register__step-title">Tải ứng dụng</h3>
+                                <p class="register__step-desc">Tìm kiếm từ khóa "VinID" trên kho ứng dụng hoặc nhấn vào đây để tải App:</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 register__item">
+                        <img src="./assets/img/register/step2.png" class="register__img" alt="">
+                        <div class="register__item-body">
+                            <span class="register__step-num">2</span>
+                            <div class="register__step-content">
+                                <h3 class="register__step-title">Đăng ký tài khoản</h3>
+                                <p class="register__step-desc">Nhập SĐT và mã OTP để đăng ký tài khoản VinID.<br>Cài đặt mã PIN và nhập thông tin cá nhân</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 register__item">
+                        <img src="./assets/img/register/step3.png" class="register__img" alt="">
+                        <div class="register__item-body">
+                            <span class="register__step-num">3</span>
+                            <div class="register__step-content">
+                                <h3 class="register__step-title">Xác thực tài khoản</h3>
+                                <p class="register__step-desc">Chọn "Xác thực tài khoản". Tải ảnh chụp rõ ràng, không mờ nhòe của 1 trong 3 loại giấy tờ tùy thân (Chứng minh nhân dân/ Căn cước công dân/ Hộ chiếu).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="news">
+            <div class="heading-separated">
+                <h1 class="voucher__heading">VinID có gì HOT?</h1>
+                <div class="separator separator--center"></div>
+            </div>
+            <div class="grid wide">
+                <div class="row news-row-feature">
+                    <div class="col l-6 news__feature-item">
+                        <a href="" class="img-link">
+                            <img src="./assets/img/news/feature.jpg" alt="" class="news__feature-post-img">
+                        </a>
+                    </div>
+                    <div class="col l-6 news__feature-item news__feature-item-body">
+                        <a href="" class="news__type">Tin tổng hợp</a>
+                        <a href="" class="news__feature-title">"Gắp trúng giá - Hứng quà to" - Cơ hội trúng quà lớn từ Game săn thưởng hoàn toàn mới trên VinID!</a>
+                        <p class="news__feature-desc">Từ 12h00' ngày 08/06/2022 đến 23h59' ngày 10/07/2022, VinID ra mắt trò chơi săn thưởng HOÀN TOÀN MỚI với cơ hội trúng thưởng cực dễ dàng.  Khách hàng vui lòng cập nhật ứng dụng VinID phiên bản mới nhất để tham gia chương trình.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid wide">
+                <div class="row news-row-wrapper">
+                    <div class="col l-6 news__item">
+                        <div class="rows news-row">
+                            <div class="col l-6 news__item-img">
+                                <a href="" class="img-link">
+                                    <img src="./assets/img/news/news1.jpg" alt="" class="news__post-img">
+                                </a>
+                            </div>
+                            <div class="col l-6 news__item-body">
+                                <a href="" class="news__type">Tin tổng hợp</a>
+                                <a href="" class="news__title">Đi chợ tại VinID Giá Sốc - Tiết kiệm đến…</a>
+                                <p class="news__date">01/06/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 news__item">
+                        <div class="rows news-row">
+                            <div class="col l-6 news__item-img">
+                                <a href="" class="img-link">
+                                    <img src="./assets/img/news/news2.jpg" alt="" class="news__post-img">
+                                </a>
+                            </div>
+                            <div class="col l-6 news__item-body">
+                                <a href="" class="news__type">Tin tổng hợp</a>
+                                <a href="" class="news__title">Xây trường vùng cao - Trao em con chữ</a>
+                                <p class="news__date">19/06/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 news__item">
+                        <div class="rows news-row">
+                            <div class="col l-6 news__item-img">
+                                <a href="" class="img-link">
+                                    <img src="./assets/img/news/news3.jpg" alt="" class="news__post-img">
+                                </a>
+                            </div>
+                            <div class="col l-6 news__item-body">
+                                <a href="" class="news__type">Tin khuyến mại</a>
+                                <a href="" class="news__title">[SIÊU SALE 6/6] MỘT ĐIỂM ĐỔI NGÀN HOT DEAL</a>
+                                <p class="news__date">03/06/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 news__item">
+                        <div class="rows news-row">
+                            <div class="col l-6 news__item-img">
+                                <a href="" class="img-link">
+                                    <img src="./assets/img/news/news4.jpg" alt="" class="news__post-img">
+                                </a>
+                            </div>
+                            <div class="col l-6 news__item-body">
+                                <a href="" class="news__type">Tin khuyến mại</a>
+                                <a href="" class="news__title">[THÁNG 6] DEAL ĐÓN HÈ, ƯU ĐÃI WINMART RẺ HẾT…</a>
+                                <p class="news__date">08/06/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn btn--primary btn--right-icon news__btn-discover">
+                Khám phá thêm
+                <i class="fa-solid fa-arrow-right right-icon"></i>
+            </a>
+        </div>
+
+        <div class="download-app">
+            <div class="row download-app-row">
+                <div class="col l-7 download-app__body">
+                    <h2 class="download-app__body-heading">Mọi tiện ích trong tầm tay</h2>
+                    <div class="separator"></div>
+                    <ul class="download-app__body-list">
+                        <li class="download-app__body-step">
+                            <span class="download-app__body-step-num">1</span>
+                            Tích điểm với mỗi giao dịch
+                        </li>
+                        <li class="download-app__body-step">
+                            <span class="download-app__body-step-num">2</span>
+                            Đổi voucher ưu đãi đến 50% từ 1.000 đối tác
+                        </li>
+                        <li class="download-app__body-step">
+                            <span class="download-app__body-step-num">3</span>
+                            Vô vàn tính năng & tiện ích
+                        </li>
+                        <li class="download-app__body-step">
+                            <span class="download-app__body-step-num">4</span>
+                            Thanh toán tiện lợi với ví VinID Pay
+                        </li>
+                    </ul>
+                    <div class="download-app__group">
+                        <h4 class="download-app__group-heading">Trải nghiệm thực tế ngay</h4>
+                        <div class="download-app__group-body">
+                            <img src="./assets/img/app-download/qrcode.png" alt="">
+                            <div class="download-app__link">
+                                <a href="">
+                                    <img src="./assets/img/app-download/download-appstore.svg" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="./assets/img/app-download/download-googleplay.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-5 download-app__img-wrapper">
+                    <img src="./assets/img/app-download/mobile-app-home.png" alt="" class="download-app__img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+:root {
+    --header-height: 68px;
+    --text-color: #333;
+    --primary-color: #dc2323;
+    --border-color: #ccc;
+    --white-color: #fff;
+    --service__item-size: 292px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn {
+    border-radius: 40px;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    background-color: #F2F3F4;
+    color: var(--text-color);
+    font-size: 1.4rem;
+}
+
+.btn:hover {
+    transform: scale(1.02);
+    transition-duration: 0.1s;
+}
+
+.btn--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.btn--active {
+    background-color: rgb(34,49,63);
+    color: var(--white-color);
+}
+
+.btn--right-icon {
+    display: block;
+    max-height: 55px;
+    line-height: 55px;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.btn--right-icon .right-icon {
+    width: 32px;
+    height: 32px;
+    background-color: rgba(1, 18, 34, 0.1);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.header__navbar-item-form-list {
+    position: absolute;
+    left: 0;
+    min-width: 194px;
+    background-color: var(--white-color);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;  
+    border-radius: 15px;
+    list-style: none;
+    z-index: 1;
+    padding: 0;
+    display: none;
+    animation: fadeIn linear 0.2s;
+    overflow: hidden;
+}
+
+.separator {
+    width: 60px;
+    height: 4px;
+    margin: 36px 0;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
+
+.separator--center {
+    margin: 36px auto;
+}
+
+.heading-separated h1 {
+    margin: 0;
+    display: block;
+    text-align: center;
+    font-size: 3.6rem;
+    color: var(--text-color);
+}
+
+.img-link {
+    display: block;   
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.img-link img {
+    display: block;
+    transition: transform 0.2s;
+}
+
+.img-link img:hover {
+    transform: scale(1.08);
+}
