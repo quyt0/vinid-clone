@@ -282,10 +282,6 @@
     position: relative;
 }
 
-.slider__link-wrapper {
-    
-}
-
 .slider__img-main {
     border-radius: 16px;
     max-width: 100%;
@@ -332,10 +328,6 @@
     width: 40px;
     height: 10px;
     margin: 10px;
-}
-
-.slider__slick-item--active {
-
 }
 
 .intro-row {
@@ -760,10 +752,6 @@
     margin: 0 auto;
 }
 
-.download-app {
-    
-}
-
 .download-app .separator {
     margin: 20px 0;
 }
@@ -845,6 +833,116 @@
 .download-app__link img {
     width: 30%;
 }
+
+.footer {
+    margin: 100px 0 50px;
+}
+
+.footer__contact-row {
+    margin: 0 100px 50px 100px;
+}
+
+.footer__contact-item {
+    position: relative;
+}
+
+.footer__contact-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: 24px;
+    background: var(--primary-color);
+    transform: translateY(-50%);
+}
+
+.footer__contact-item:first-child::after {
+    display: none;
+}
+
+.footer__contact-item-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer__contact-body {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footer__contact-label {
+    font-size: 1.4rem;
+    color: rgba(1, 18, 34, 0.8);
+    font-weight: 400;
+    margin: 0;
+}
+
+.footer__contact-info {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 700;
+    margin: 0;
+}
+
+
+.footer__main-row {
+    margin: 0 40px;
+}
+
+.footer__main-item-heading {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+}
+
+.footer__main-item-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer__main-item-body {
+    padding: 10px 0;
+}
+
+.footer__main-item-subheading {
+    font-size: 1.4rem;
+    color: rgba(1, 18, 34, 0.8);
+    font-weight: 400;
+    margin: 0;
+}
+
+.footer__main-item-info {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 600;
+    margin: 5px 0 0 0;
+}
+
+.footer__main-item-info--bold {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.footer__main-item-info-link {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.footer__main-item-heading--download {
+    margin-top: 10px;
+}
+
+.footer__main-item-heading-download-img {
+    height: 10%;
+}
+
 
 @keyframes fadeIn {
     from {
