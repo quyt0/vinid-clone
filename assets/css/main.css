@@ -313,23 +313,6 @@
     line-height: 60px;
 }
 
-.slider__slick-list {
-    display: inline-flex;
-    list-style: none;
-    padding-left: 0;
-    position: absolute;
-    top: 90%;
-    left: 10px;
-}
-
-.slider__slick-item {
-    border: 1px solid #333;
-    border-radius: 5px;
-    width: 40px;
-    height: 10px;
-    margin: 10px;
-}
-
 .intro-row {
     margin-top: 10px;
     position: relative;
@@ -348,6 +331,14 @@
     height: 1px;
     background-color: #EFF0F1;
 }
+
+.intro-item-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
 
 .intro-item {
     display: flex;
@@ -797,7 +788,7 @@
 }
 
 .download-app__body {
-    padding: 60px 0 0 60px;
+    padding: 60px 0 60px 60px;
 }
 
 .download-app__img-wrapper {
