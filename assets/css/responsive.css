@@ -33,9 +33,6 @@
     .slider {
         margin: calc(var(--header-height) + 20px) 15px 0;
     }
-    .slider__nav-icon-wrapper {
-        display: none;
-    }
     .intro-item-wrapper::-webkit-scrollbar {
         display: none;
     }
@@ -158,6 +155,9 @@
 @media (max-width: 740px) {
     .slider__img-main {
         content: url(/assets/img/slider/slider-mobile.jpg)
+    }
+    .slider__nav-icon-wrapper {
+        display: none;
     }
     .intro-product {
         height: 75px;
