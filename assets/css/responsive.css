@@ -211,6 +211,7 @@
 }
 
 @media (max-width: 740px) {
+<<<<<<< HEAD
     .header {
         padding: 0 10px;
     }
@@ -245,6 +246,10 @@
     .slider-mobile {
         margin: calc(var(--header-height) + 20px) 15px 0;
         display: block;
+=======
+    .slider__img-main {
+        content: url(./assets/img/slider/slider-mobile.jpg)
+>>>>>>> f998baa25dfb47eab340f7356a1c09372de07137
     }
     .slider__nav-icon-wrapper {
         display: none;
