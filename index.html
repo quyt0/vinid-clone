@@ -22,6 +22,7 @@
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v14.0"
         nonce="jDr5rDnE"></script>
     <div id="fb-root"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -148,6 +149,76 @@
                     </li>
                 </ul>
             </nav>
+            <div class="mobile-menu-modal">
+                <div class="mobile-menu-inner">
+                    <i class="fa-solid fa-xmark mobile-menu-close"></i>
+                    <ul class="mobile-menu-list">
+                        <li class="mobile-menu-item mobile-menu-item--active">
+                            <a href="" class="mobile-menu-link">Trang chủ</a>
+                        </li>
+                        <label for="mobile-menu-intro-checkbox" class="mobile-menu-item">
+                            <input type="checkbox" class="mobile-sub-item-checkbox" id="mobile-menu-intro-checkbox" hidden>
+                            <p href="" class="mobile-menu-link">
+                                Giới thiệu
+                                <i class="fa-solid fa-caret-down mobile-menu-down-icon"></i>
+                            </p>
+                            <ul class="mobile-menu-sub-list">
+                                <li class="mobile-menu-sub-item">
+                                    <a href="" class="mobile-menu-sub-link">Về VinID</a>
+                                </li>
+                                <li class="mobile-menu-sub-item">
+                                    <a href="" class="mobile-menu-sub-link">Việc làm</a>
+                                </li>
+                            </ul>
+                        </label>
+                        <label for="mobile-menu-intro-service" class="mobile-menu-item">
+                            <input type="checkbox" class="mobile-sub-item-checkbox" id="mobile-menu-intro-service" hidden>
+                            <p href="" class="mobile-menu-link">
+                                Dịch vụ
+                                <i class="fa-solid fa-caret-down mobile-menu-down-icon"></i>
+                            </p>
+                            <ul class="mobile-menu-sub-list">
+                                <li class="mobile-menu-sub-item">
+                                    <a href="" class="mobile-menu-sub-link">Voucher</a>
+                                </li>
+                                <li class="mobile-menu-sub-item">
+                                    <a href="" class="mobile-menu-sub-link">VinID Giá Sốc</a>
+                                </li>
+                                <li class="mobile-menu-sub-item">
+                                    <a href="" class="mobile-menu-sub-link">Tiêu tích điểm</a>
+                                </li>
+                                <li class="mobile-menu-sub-item">
+                                    <a href="" class="mobile-menu-sub-link">Gift Card</a>
+                                </li>
+                            </ul>
+                        </label>
+                        <li class="mobile-menu-item">
+                            <a href="" class="mobile-menu-link">Tin tức</a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a href="" class="mobile-menu-link">Blog</a>
+                        </li>
+                        <label for="mobile-menu-intro-help" class="mobile-menu-item">
+                            <input type="checkbox" class="mobile-sub-item-checkbox" id="mobile-menu-intro-help" hidden>
+                            <p href="" class="mobile-menu-link">
+                                Hỗ trợ
+                                <i class="fa-solid fa-caret-down mobile-menu-down-icon"></i>
+                            </p>
+                            <ul class="mobile-menu-sub-list">
+                                <li class="mobile-menu-sub-item">
+                                    <a href="" class="mobile-menu-sub-link">Câu hỏi thường gặp</a>
+                                </li>
+                                <li class="mobile-menu-sub-item">
+                                    <a href="" class="mobile-menu-sub-link">Hướng dẫn</a>
+                                </li>
+                                <li class="mobile-menu-sub-item">
+                                    <a href="" class="mobile-menu-sub-link">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </label>
+                    </ul>
+                </div>
+            </div>
             <i class="fa-solid fa-bars mobile-bar"></i>
         </header>
         <div class="slider">
@@ -159,8 +230,10 @@
                 <i class="fa-solid fa-arrow-right slider__nav-icon-right"></i>
             </span>
         </div>
+        <div class="slider-mobile">
+            <img src="./assets/img/slider/slider-mobile.jpg" class="slider__img-main slider__img-mobile" alt="">
+        </div>
         <div class="intro-product">
-
             <ul class="intro-item-wrapper">
                 <li class="intro-item">
                     <img class="intro-item__img" src="./assets/img/logo/badge.png" alt="">
@@ -769,6 +842,7 @@
             </div>
         </footer>
     </div>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

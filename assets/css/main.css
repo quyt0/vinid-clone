@@ -18,7 +18,7 @@
 .header__logo-with-search-wrap {
     display: flex;
     align-items: center;
-    
+    flex: 1;
 }
 
 .header__logo-main {
@@ -28,6 +28,7 @@
 
 .header__search-input-wrap {
     position: relative;
+    flex: 1;
 }
 
 .header__search-icon {
@@ -49,6 +50,7 @@
     border-radius: 25px;
     padding: 0 30px;
     margin: 0 0 0 40px;
+    width: calc(100% - 45px);
 }
 
 .header__search-input:focus {
@@ -113,6 +115,7 @@
 .header__navbar-main {
     display: flex;
     align-items: center;
+    padding: 0;
 }
 
 .header__navbar-main:last-child {
@@ -280,6 +283,16 @@
     margin-left: 40px;
 }
 
+.mobile-bar {
+    display: none;
+    font-size: 2.5rem;
+    padding: 20px;
+}
+
+.mobile-menu-modal {
+    display: none;
+}
+
 .slider {
     margin: calc(var(--header-height) + 20px) 32px 0;
     position: relative;
@@ -314,6 +327,10 @@
 .slider__nav-icon-wrapper-right {
     right: 30px;
     line-height: 60px;
+}
+
+.slider-mobile {
+    display: none;
 }
 
 .intro-item-wrapper {
