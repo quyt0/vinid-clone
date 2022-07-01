@@ -72,8 +72,6 @@
     .mobile-menu-list {
         padding: 60px 0 0 40px;
     }
-    .mobile-menu-item {
-    }
     .mobile-menu-item--active {
         font-weight: 600;
     }
@@ -93,8 +91,6 @@
     .mobile-menu-sub-list {
         padding-left: 20px;
         display: none;
-    }
-    .mobile-menu-sub-item {
     }
     .mobile-sub-item-checkbox:checked ~ .mobile-menu-sub-list {
         display: block;
